@@ -55,10 +55,18 @@
 
         <a-form-item>
           <!--<a-checkbox v-decorator="['rememberMe']">自动登录</a-checkbox>-->
-          <a-select v-model="state.loginType">
-            <a-select-option :value="2">学生</a-select-option>
-            <a-select-option :value="1">教师</a-select-option>
-          </a-select>
+<!--          <a-select v-model="state.loginType">-->
+<!--            <a-select-option :value="2">学生</a-select-option>-->
+<!--            <a-select-option :value="1">教师</a-select-option>-->
+<!--          </a-select>-->
+          <a-radio-group v-model="state.loginType" :default-value="2">
+            <a-radio :value="2">
+              学生
+            </a-radio>
+            <a-radio :value="1">
+              教师
+            </a-radio>
+          </a-radio-group>
           <router-link class="register" :to="{ name: 'register' }" style="float: right;">注册账户</router-link>
         </a-form-item>
 

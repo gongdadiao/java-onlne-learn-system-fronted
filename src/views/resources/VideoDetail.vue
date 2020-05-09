@@ -6,19 +6,33 @@
   </div>
 </template>
 <script>
-export default {
+  import {getUrl} from '../../api/resource'
+
+  export default {
     name: 'VideoDetail',
     data(){
       return{
         options: {
-          source:this.$store.state.res_url
+          source: null
         },
-        source: this.$store.state.res_url,
+        source: null,
         show: true
       }
     },
     mounted(){
-        console.log(this.source)
+      var that=this
+        getUrl(this.$route.params.id)
+          .then(resp=>{
+            if(resp.code==0){
+              that.options.source=resp.data
+              that.source=resp.data
+              // that.$refs.VueAliplayerV2.$props.source=resp.data
+              // that.$refs.VueAliplayerV2.$props.options=that.options
+              // that.replay()
+            }else{
+              this.$message.info("获取资源失败")
+            }
+          })
     },
     methods:{
         play(){

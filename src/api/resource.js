@@ -2,6 +2,26 @@
 import api from './index'
 import { axios } from '../utils/request'
 
+export function getVideo(parameter) {
+  return axios({
+    url: api.ResGetVideo+parameter,
+    method: 'get'
+  })
+}
+export function getCode(parameter) {
+  return axios({
+    url: api.ResGetCode+parameter,
+    method: 'get'
+  })
+}
+export function getUrl(parameter) {
+  return axios({
+    url: api.ResUrl+parameter,
+    method: 'get'
+  })
+}
+
+
 export function getGradeDistribute(parameter) {
   return axios({
     url: api.GradeDistribute+parameter,

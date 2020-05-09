@@ -54,7 +54,6 @@ export default {
   data () {
     return {
       form: this.$form.createForm(this),
-
     }
   },
   mounted() {

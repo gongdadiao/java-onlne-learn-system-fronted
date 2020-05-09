@@ -41,12 +41,12 @@ export default {
       // 直接跳到参加考试的页面，查看所有题目的详细情况
       if(term.type=='视频') {
         const routeUrl = this.$router.resolve({
-          path: `/classes/office/`+term.id
+          path: `/classes/video/`+term.id
         })
         this.$router.push(routeUrl.href)
       }else if(term.type=='作业'){
         const routeUrl = this.$router.resolve({
-          path: `/classes/tset/`+term.id
+          path: `/classes/test/`+term.id
         })
         this.$router.push(routeUrl.href)
       }
@@ -56,9 +56,14 @@ export default {
         })
         this.$router.push(routeUrl.href)
       }
-      else if(term.type=='文档'){
+      else if(term.type=='ppt'){
         const routeUrl = this.$router.resolve({
           path: `/classes/office/`+term.id
+        })
+        this.$router.push(routeUrl.href)
+      }else if(term.type=='源码'){
+        const routeUrl = this.$router.resolve({
+          path: `/classes/codefile/`+term.id
         })
         this.$router.push(routeUrl.href)
       }

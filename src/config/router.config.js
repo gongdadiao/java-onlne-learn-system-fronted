@@ -123,25 +123,31 @@ export const asyncRouterMap = [
             path:'/classes/video/:id',
             name: 'VideoDetail',
             component: ()=>import('../views/resources/VideoDetail'),
-            meta: { title:'视频',keepAlive: true, permission: ['student-class']}
+            meta: { title:'视频',keepAlive: false, permission: ['student-class']}
           },
           {
             path:'/classes/office/:id',
             name: 'OfficeDetail',
             component: ()=>import('../views/resources/DocDetail'),
-            meta:{ title:'文档',keepAlive: true, permission: ['student-class']}
+            meta:{ title:'文档',keepAlive: false, permission: ['student-class']}
           },
           {
             path:'/classes/exam/:id',
             name: 'ExamDetail',
             component: ()=>import('../views/list/ExamDetail'),
-            meta:{ title:'试卷',keepAlive: true, permission: ['student-class']}
+            meta:{ title:'试卷',keepAlive: false, permission: ['student-class']}
           },
           {
             path:'/classes/test/:id',
             name: 'TestDetail',
             component: ()=>import('../views/resources/HomeworkDetail'),
-            meta:{ title:'作业',keepAlive: true, permission: ['student-class']}
+            meta:{ title:'作业',keepAlive: false, permission: ['student-class']}
+          },
+          {
+            path:'/classes/codefile/:id',
+            name: 'TestDetail',
+            component: ()=>import('../views/resources/YuanmaDetail'),
+            meta:{ title:'源码',keepAlive: false, permission: ['student-class']}
           }
         ]
       },

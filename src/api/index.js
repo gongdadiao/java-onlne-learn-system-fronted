@@ -10,6 +10,12 @@ const api = {
   TrainCourseStudentCourseDetail:'/train/course/studentdetail/',
   TrainSubmitCode:'/train/code/run',
 
+  ResGetVideo:'/res/getvideo/',
+  ResGetCode:'/res/getcode/',
+  ResGetOffice:'/res/getoffice/',
+  ResUrl:'/res/url/',
+
+
   Login: '/auth/login',
   Logout: '/auth/logout',
   ForgePassword: '/auth/forge-password',

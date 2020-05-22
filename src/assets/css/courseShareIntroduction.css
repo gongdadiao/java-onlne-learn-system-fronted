@@ -1,0 +1,134 @@
+
+.boxstyle {
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+
+.title {
+  color: #333;
+  font-size: 18px;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #ddd;
+  padding-left: 25px; }
+
+.courseshareintroduction {
+  padding: 20px 0 240px; }
+
+.course-introduction {
+  height: 332px;
+  padding: 30px;
+  margin-bottom: 15px; }
+
+.course-introduction-infor {
+  width: 700px; }
+
+.course-text {
+  color: #666;
+  font-size: 14px; }
+
+.course-logo {
+  width: 170px;
+  height: 55px; }
+  .course-logo img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+
+.course-title {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #333; }
+  .course-title p {
+    display: inline-block; }
+  .course-title span {
+    background: #ff0000;
+    font-size: 12px;
+    color: #fff;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 3px;
+    margin: 5px 0 0 10px; }
+
+.course-btn-style {
+  width: 190px;
+  height: 50px;
+  margin: 35px 0;
+  display: inline-block;
+  line-height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  display: none; }
+
+.course-btn-style.active {
+  display: inline-block; }
+
+.btn-start {
+  background: #169bd5; }
+
+.btn-join {
+  background: #ff7200; }
+
+.btn-join:hover, .btn-join:focus {
+  background: #ff9326;
+  color: #fff;
+  text-decoration: none; }
+
+.btn-alreadyjoin {
+  background: #1aa43a; }
+
+.btn-alreadyjoin:hover, .btn-alreadyjoin:focus {
+  background: #1cb540;
+  color: #fff;
+  text-decoration: none; }
+
+.course-img {
+  width: 420px;
+  height: 236px;
+  margin-bottom: 50px;
+  margin-left: 300px;
+}
+  .course-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+.course-try a {
+  display: block;
+  padding-left: 36px;
+  width: 134px;
+  height: 28px;
+  line-height: 28px;
+  color: #fff;
+  background: #a6ddf2 url("http://www.icourses.cn/web/icourse/page/imgs/play.png") no-repeat 10px center;
+  margin-right: 8px; }
+.course-try a:hover, .course-try a:focus {
+  text-decoration: none; }
+.course-try a.active {
+  background: #199ed8 url("http://www.icourses.cn/web/icourse/page/imgs/play.png") no-repeat 10px center; }
+.course-try a:last-child {
+  margin-right: 0; }
+
+.course-primary {
+  width: 965px; }
+  .course-primary .title {
+    padding-left: 40px; }
+
+.course-primary-text .content {
+  padding: 20px 40px; }
+
+
+.course-primary-unit .content {
+  padding: 20px 40px; }
+
+
+.course-teaching-material .content {
+  padding: 30px 40px 0; }
+
+.course-teaching-material-i {
+  margin: 0 30px 30px 0;
+  width: 270px; }
